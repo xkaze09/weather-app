@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌤️ Weather App
 
-## Getting Started
+A dynamic and responsive **Weather Application** built from scratch using **Next.js**, **Tailwind CSS**, and **TypeScript**. This app delivers real-time weather updates with a clean UI and modular React components.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔎 **Search Functionality**: Search weather data for any location.
+- 📍 **Current Location Support**: Get weather based on your current geolocation.
+- 🌤 **Today’s Weather**: Displays temperature, weather conditions, and icons.
+- 📅 **7-Day Forecast**: Detailed week-long forecast with condition visuals.
+- 🌡️ **Additional Details**: Humidity, wind speed, sunrise/sunset, and more.
+- ⚡ **Modern UI**: Designed with Tailwind CSS for a clean and mobile-responsive interface.
+- 🔧 **TypeScript Integration**: Strongly-typed for better reliability and developer experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Component Structure
 
-## Learn More
+### 1. **Navbar Component**
+- Displays the app title and navigation options.
+- Designed for responsive layouts using Tailwind CSS.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. **API & Data Types Configurations**
+- External weather API integration.
+- Type-safe data modeling using TypeScript interfaces.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. **Current Day Section Components**
+- Shows the current temperature, weather description, and location name.
+- Includes weather icons and date/time info.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 4. **Additional Details Component**
+- Displays extra metrics such as:
+  - Feels-like temperature
+  - Wind speed and direction
+  - Humidity
+  - UV Index
 
-## Deploy on Vercel
+### 5. **7-Day Forecast Section**
+- Scrollable card-style layout.
+- Daily weather summaries with date, temperature range, and condition icons.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 6. **Search & Current Location Logic**
+- Use of browser geolocation API for instant local weather.
+- Debounced input for optimized search requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [OpenWeatherMap API](https://openweathermap.org/api)
+
+---
